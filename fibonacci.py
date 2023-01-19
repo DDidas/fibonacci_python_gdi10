@@ -1,30 +1,15 @@
-def fibonacci(n):
-    a = 0
+def fib(number_of_terms):
+   counter = 0
 
-    b = 1
+   first = 0
+   second = 1
+   temp = 0
 
-    if n == 0:
+   while counter <= number_of_terms:
+      print(first)
+      temp = first + second
+      first = second
+      second = temp
+      counter = counter + 1
 
-        return a
-
-    elif n == 1:
-
-        return b
-
-    else:
-
-        for i in range(2, n + 1):
-            c = a + b
-
-            a = b
-
-            b = c
-
-        return b
-
-
-x = int(input("Enter a number: "))
-
-result = fibonacci(x)
-
-print(result)
+print(fib(10))
