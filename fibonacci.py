@@ -25,6 +25,6 @@ def fibonacci(n):
 
 x = int(input("Enter a number: "))
 
-result = fibonacci(6)
+result = fibonacci(x)
 
 print(result)
