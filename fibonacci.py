@@ -12,4 +12,4 @@ def fib(n):
       second = temp
       counter = counter + 1
 
-print(fib(10))
+fib(10)
